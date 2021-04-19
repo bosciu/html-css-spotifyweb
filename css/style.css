@@ -1,26 +1,5 @@
 /* Debug */
 
-aside {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: calc(100vh - 130px);
-    padding-left: 15px;
-    background-color: black;
-    overflow: hidden;
-}
-
-main {
-    display: flex;
-    overflow: auto;
-    background-color: lightgreen;
-}
-
-footer {
-    height: 130px;
-    background-color: grey;
-}
-
 
 /* /Debug */
 
@@ -39,11 +18,47 @@ body {
     color: #6F6F6F;
 }
 
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Text Rules */
+
+h2,
+h3 {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Main */
+
+main {
+    display: flex;
+    overflow: auto;
+}
+
 
 /* Aside */
 
-aside>ul {
-    list-style: none;
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 200px;
+    height: calc(100vh - 130px);
+    padding-left: 15px;
+    background-color: black;
+    overflow: hidden;
 }
 
 aside li {
@@ -51,7 +66,7 @@ aside li {
 }
 
 aside>img {
-    width: 85%;
+    width: 70%;
     padding: 7% 0;
 }
 
@@ -103,4 +118,47 @@ aside>img {
 
 #user>span {
     color: white;
+}
+
+
+/* /Aside */
+
+
+/* Albums-section */
+
+#albums-section {
+    width: 100%;
+    height: calc(100vh - 130px);
+    padding: 100px 0 0 2%;
+    overflow: auto;
+    background-color: #141922;
+}
+
+#albums-section>ul>li {
+    display: inline-block;
+    margin: 0 1%;
+    text-transform: uppercase;
+}
+
+.album-box {
+    width: 220px;
+    text-align: center;
+    margin: 2%;
+    margin-left: 0;
+}
+
+.album-box>img {
+    width: 100%;
+}
+
+#albums-section>.row:last-child img {
+    border-radius: 50%;
+}
+
+
+/* Footer */
+
+footer {
+    height: 130px;
+    background-color: grey;
 }
