@@ -1,0 +1,34 @@
+/* Debug */
+
+aside {
+    width: 200px;
+    height: 84vh;
+    background-color: black;
+    float: left;
+}
+
+main {
+    height: 84vh;
+    background-color: lightgreen;
+}
+
+footer {
+    height: 16vh;
+    background-color: grey;
+}
+
+
+/* /Debug */
+
+
+/* Common */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
