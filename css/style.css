@@ -1,19 +1,24 @@
 /* Debug */
 
 aside {
+    display: flex;
+    flex-direction: column;
     width: 200px;
-    height: 84vh;
+    height: calc(100% - 130px);
+    padding-left: 15px;
     background-color: black;
-    float: left;
+    overflow: hidden;
 }
 
 main {
-    height: 84vh;
+    display: none;
+    width: 70%;
+    overflow: auto;
     background-color: lightgreen;
 }
 
 footer {
-    height: 16vh;
+    height: 130px;
     background-color: grey;
 }
 
@@ -31,4 +36,73 @@ footer {
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #6F6F6F;
+    height: 100vh;
+}
+
+
+/* Aside */
+
+aside>ul {
+    list-style: none;
+}
+
+aside li {
+    margin: 5px 0;
+}
+
+aside>img {
+    width: 85%;
+    padding: 7% 0;
+}
+
+#library-icon>span {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    margin: 0 3px;
+    background-color: #6F6F6F;
+}
+
+#library-icon>span:last-child {
+    transform: rotate(347deg);
+}
+
+#playlist-menu {
+    margin-top: 15px;
+    overflow: auto;
+}
+
+#playlist-menu>li:first-child {
+    text-transform: uppercase;
+    color: white;
+}
+
+#bottom-aside {
+    margin-top: auto;
+    padding: 5% 0;
+}
+
+#bottom-aside>hr {
+    width: 90%;
+    margin: 5% 0;
+    border-color: #6F6F6F;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+}
+
+#user>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5%;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+#user>span {
+    color: white;
 }
