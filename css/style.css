@@ -96,6 +96,11 @@ aside>img[src*="small"] {
     display: none;
 }
 
+#library-icon,
+i {
+    cursor: pointer;
+}
+
 #library-icon>span {
     display: inline-block;
     width: 2px;
@@ -244,7 +249,8 @@ aside>img[src*="small"] {
     transition: all 0.5s;
 }
 
-#albums-section>.row:last-child img {
+#albums-section>.row:last-child img,
+#albums-section>.row:last-child .overlay {
     border-radius: 50%;
 }
 
@@ -277,6 +283,7 @@ footer>div {
 
 .folder-like-buttons>i {
     display: block;
+    margin: 10px 0;
     font-size: 20px;
 }
 
@@ -333,7 +340,6 @@ footer>div {
 }
 
 .level-bar {
-    display: inline-block;
     position: absolute;
     width: 40%;
     height: 100%;
@@ -341,17 +347,56 @@ footer>div {
     background-color: #C1C1C1;
 }
 
+.sphere {
+    display: none;
+    position: absolute;
+    left: 95%;
+    width: 25px;
+    height: 25px;
+    background-color: #C1C1C1;
+    border-radius: 50%;
+    transform: translateY(-30%);
+    cursor: pointer;
+}
+
 .img-container>.overlay:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: rgba(255, 255, 255, 1);
 }
 
-a:hover {
+img {
+    cursor: pointer;
+}
+
+a:hover,
+i:hover {
     color: white;
 }
 
-.add-playlist:hover {
+aside li:hover {
+    color: white;
+}
+
+aside li:hover #library-icon>span {
     background-color: white;
+}
+
+#playlist-menu li:nth-child(2):hover>.add-playlist {
+    background-color: white;
+}
+
+.player i[class*="circle"]:hover {
+    font-size: 42px;
+}
+
+.music-scroll-bar:hover>.level-bar,
+.audio-scroll:hover>.level-bar {
+    background-color: #ACFF2F;
+}
+
+.music-scroll-bar:hover .sphere,
+.audio-scroll:hover .sphere {
+    display: inline-block;
 }
 
 @media screen and (max-width: 1180px) {
