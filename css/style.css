@@ -493,3 +493,9 @@ aside li:hover #library-icon>span {
         width: calc(100% - 60px);
     }
 }
+
+@media screen and (max-width: 549px) {
+    .album-banner>img {
+        display: none;
+    }
+}
