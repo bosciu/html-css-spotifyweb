@@ -16,6 +16,10 @@ ul {
     list-style: none;
 }
 
+img {
+    cursor: pointer;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -26,11 +30,6 @@ ul {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: unset;
-}
-
 
 /* Text Rules */
 
@@ -39,12 +38,13 @@ h3 {
     color: white;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .color-white {
     color: white;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
 }
 
 
@@ -365,9 +365,8 @@ footer>div {
     color: rgba(255, 255, 255, 1);
 }
 
-img {
-    cursor: pointer;
-}
+
+/* Hover */
 
 a:hover,
 i:hover {
@@ -403,6 +402,9 @@ aside li:hover #library-icon>span {
 .btn-lg:hover {
     padding: 20px 40px;
 }
+
+
+/* Media query */
 
 @media screen and (max-width: 1180px) {
     .album-banner>img {
