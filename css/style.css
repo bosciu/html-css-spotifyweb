@@ -195,6 +195,7 @@ i {
     font-size: 16px;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 #albums-section>ul {
@@ -399,9 +400,13 @@ aside li:hover #library-icon>span {
     display: inline-block;
 }
 
+.btn-lg:hover {
+    padding: 20px 40px;
+}
+
 @media screen and (max-width: 1180px) {
     .album-banner>img {
-        margin-right: 5px;
+        margin: 0 5px;
         width: 60px;
     }
     .album-banner {
@@ -463,11 +468,24 @@ aside li:hover #library-icon>span {
     #bottom-aside>hr {
         display: none;
     }
+    .album-banner {
+        width: 28%;
+    }
     .player {
+        width: 44%;
         font-size: 20px;
+    }
+    .volume {
+        width: 28%;
     }
     .player i[class*="circle"] {
         font-size: 34px;
+    }
+    .song-info>h3 {
+        font-size: 14;
+    }
+    .song-info>h4 {
+        font-size: 12px;
     }
     #upgrade-banner {
         width: calc(100% - 60px);
