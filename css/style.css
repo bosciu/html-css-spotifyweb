@@ -429,7 +429,8 @@ aside li:hover #library-icon>span {
     .album-banner>i {
         margin: 0 5px;
     }
-    .album-banner {
+    .album-banner,
+    .volume {
         width: 25%;
     }
     .player {
@@ -437,6 +438,10 @@ aside li:hover #library-icon>span {
     }
     .volume {
         font-size: 14px;
+    }
+    .sphere {
+        width: 20px;
+        height: 20px;
     }
 }
 
