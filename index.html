@@ -42,6 +42,7 @@
                 <li>Nome Playlist</li>
                 <li>Nome Playlist</li>
             </ul>
+            <!-- /Menù playlist -->
 
             <div id="bottom-aside">
                 <i class="far fa-arrow-alt-circle-down"></i> Installa app
@@ -66,6 +67,7 @@
             </ul>
             <!-- /Lista generi -->
 
+            <!-- Riprodotti di recente -->
             <h2>Recently played</h2>
             <div class="row">
                 <div class="album-box">
@@ -104,7 +106,9 @@
                     <h4>Subtitle</h4>
                 </div>
             </div>
+            <!-- /Riprodotti di recente -->
 
+            <!-- Creato per *** -->
             <h2>Creato per John Doe</h2>
             <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
 
@@ -118,9 +122,12 @@
                     <h3>Daily Mix 1</h3>
                 </div>
             </div>
+            <!-- /Creato per *** -->
 
+            <!-- Top artisti -->
             <h2>Artisti più popolari</h2>
             <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
+
             <div class="row">
                 <div class="album-box">
                     <img src="img/youg.jpeg" alt="">
@@ -132,13 +139,45 @@
                 </div>
             </div>
         </section>
+        <!-- /Top artisti -->
         <!-- /Parte centrale webapp -->
     </main>
 
 
     <!-- Player -->
     <footer>
+        <div class="row">
+            <div class="album-banner">
+                <img src="img/sinister.jpeg" alt="Sinister">
+                <div class="song-info">
+                    <h3>Sinister</h3>
+                    <h4>Brano Nome</h4>
+                </div>
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
 
+            <div class="player">
+                <div class="command text-center">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div id="music-scroll" class="row">
+                    <span>0:25</span>
+                    <div class="music-scroll-bar"></div>
+                    <span>4:30</span>
+                </div>
+            </div>
+            <div class="volume">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-tv"></i>
+                <i class="fas fa-volume-up"></i>
+                <div id="audio-scroll"></div>
+            </div>
+        </div>
     </footer>
     <!-- /Player -->
 </body>

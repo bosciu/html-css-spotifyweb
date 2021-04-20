@@ -55,7 +55,7 @@ aside {
     flex-direction: column;
     flex-shrink: 0;
     width: 200px;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 120px);
     padding-left: 15px;
     background-color: black;
     overflow: hidden;
@@ -128,7 +128,7 @@ aside>img {
 
 #albums-section {
     width: 100%;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 120px);
     padding: 100px 0 0 2%;
     overflow: auto;
     background-color: #141922;
@@ -159,6 +159,68 @@ aside>img {
 /* Footer */
 
 footer {
-    height: 130px;
-    background-color: grey;
+    height: 120px;
+    background-color: #282828;
+}
+
+footer>div {
+    height: 100%;
+}
+
+.album-banner,
+.volume {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.album-banner,
+.volume {
+    width: 18%;
+    font-size: 14px;
+}
+
+.album-banner>img {
+    width: 90px
+}
+
+.player {
+    width: 64%;
+    color: white;
+    font-size: 24px;
+}
+
+.command {
+    line-height: 78px;
+}
+
+.command>i {
+    margin: 2%;
+    vertical-align: middle;
+}
+
+.player i[class*="circle"] {
+    font-size: 38px;
+    margin: 1%;
+}
+
+#music-scroll {
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.music-scroll-bar {
+    width: 60%;
+    height: 8px;
+    margin: 0 1%;
+    border-radius: 15px;
+    background-color: #6F6F6F;
+}
+
+#audio-scroll {
+    width: 45%;
+    height: 8px;
+    border-radius: 15px;
+    background-color: #6F6F6F;
 }
