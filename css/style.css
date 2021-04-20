@@ -503,4 +503,8 @@ aside li:hover #library-icon>span {
     .album-banner>img {
         display: none;
     }
+    .sphere {
+        width: 17px;
+        height: 17px;
+    }
 }
