@@ -19,7 +19,10 @@
             <img src="img/logo.svg" alt="Logo Spotify">
             <!-- Menù navigazione -->
             <ul>
-                <li><i class="fas fa-home"></i>Home</li>
+                <li class="color-white">
+                    <span class="aside-active"></span>
+                    <i class="fas fa-home"></i> Home
+                </li>
                 <li><i class="fas fa-search"></i>Cerca</li>
                 <li>
                     <span id="library-icon">
@@ -33,7 +36,12 @@
             <!-- Menù playlist -->
             <ul id="playlist-menu">
                 <li>Playlist</li>
-                <li>Crea Playlist</li>
+                <li class="flex-center">
+                    <div class="add-playlist">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    Crea Playlist
+                </li>
                 <li>Nome Playlist</li>
                 <li>Nome Playlist</li>
                 <li>Nome Playlist</li>
@@ -47,7 +55,7 @@
             <div id="bottom-aside">
                 <i class="far fa-arrow-alt-circle-down"></i> Installa app
                 <hr>
-                <div id="user">
+                <div id="user" class="flex-center">
                     <img src="img/profile.svg" alt="Profile"><span>John Doe</span>
                 </div>
             </div>
@@ -57,8 +65,13 @@
         <!-- Parte centrale webapp -->
         <section id="albums-section">
             <!-- Lista generi -->
-            <ul class="text-center">
-                <li>In evidenza</li>
+            <ul>
+                <li>
+                    <span> 
+                        In evidenza
+                        <div class="active"></div>
+                    </span>
+                </li>
                 <li>Podcast</li>
                 <li>Classifiche</li>
                 <li>Generi e mood</li>
@@ -158,7 +171,7 @@
             </div>
 
             <div class="player">
-                <div class="command text-center">
+                <div class="command">
                     <i class="fas fa-random"></i>
                     <i class="fas fa-step-backward"></i>
                     <i class="far fa-play-circle"></i>
