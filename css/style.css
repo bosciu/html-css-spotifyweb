@@ -26,6 +26,11 @@ ul {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: unset;
+}
+
 
 /* Text Rules */
 
@@ -55,11 +60,11 @@ main {
 
 aside {
     display: flex;
+    align-items: center;
     flex-direction: column;
     flex-shrink: 0;
     width: 200px;
     height: calc(100vh - 120px);
-    padding-left: 15px;
     background-color: black;
     overflow: hidden;
 }
@@ -85,6 +90,10 @@ aside li>i {
 aside>img {
     width: 70%;
     padding: 7% 0;
+}
+
+aside>img[src*="small"] {
+    display: none;
 }
 
 #library-icon>span {
@@ -126,13 +135,15 @@ aside>img {
 }
 
 #bottom-aside {
+    align-self: flex-start;
     margin-top: auto;
-    padding: 5% 0;
+    padding: 5% 12%;
+    text-align: center;
 }
 
 #bottom-aside>hr {
-    width: 90%;
-    margin: 5% 0;
+    width: 140%;
+    margin: 10% 0;
     border-color: #6F6F6F;
 }
 
@@ -142,10 +153,6 @@ aside>img {
     margin-right: 5%;
     background-color: grey;
     border-radius: 50%;
-}
-
-#user>span {
-    color: white;
 }
 
 
@@ -168,7 +175,7 @@ aside>img {
     width: calc(100% - 200px);
     right: 0;
     height: 100px;
-    padding: 1%;
+    padding: 20px;
     text-align: right;
     background-color: rgba(0, 0, 0, 0.4)
 }
@@ -176,7 +183,7 @@ aside>img {
 .btn-lg {
     display: inline-block;
     border: 1px solid white;
-    padding: 1% 2%;
+    padding: 15px 30px;
     border-radius: 50px;
     font-weight: 500;
     font-size: 16px;
@@ -185,7 +192,9 @@ aside>img {
 }
 
 #albums-section>ul {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding-top: 120px;
 }
 
@@ -198,7 +207,7 @@ aside>img {
 
 #albums-section>ul>li {
     display: inline-block;
-    margin: 0 1%;
+    margin: 3% 2%;
     text-transform: uppercase;
 }
 
@@ -221,6 +230,8 @@ aside>img {
 /* Footer */
 
 footer {
+    position: relative;
+    z-index: 2;
     height: 120px;
     background-color: #282828;
 }
@@ -238,8 +249,13 @@ footer>div {
 
 .album-banner,
 .volume {
-    width: 18%;
+    width: 22%;
     font-size: 14px;
+}
+
+.folder-like-buttons>i {
+    display: block;
+    font-size: 20px;
 }
 
 .album-banner>img {
@@ -247,7 +263,7 @@ footer>div {
 }
 
 .player {
-    width: 64%;
+    width: 56%;
     color: white;
     font-size: 24px;
 }
@@ -267,6 +283,10 @@ footer>div {
     margin: 1%;
 }
 
+.volume {
+    font-size: 16px;
+}
+
 #music-scroll {
     justify-content: center;
     align-items: center;
@@ -274,6 +294,7 @@ footer>div {
 }
 
 .music-scroll-bar {
+    position: relative;
     width: 60%;
     height: 8px;
     margin: 0 1%;
@@ -281,9 +302,92 @@ footer>div {
     background-color: #6F6F6F;
 }
 
-#audio-scroll {
+.audio-scroll {
+    position: relative;
     width: 45%;
     height: 8px;
     border-radius: 15px;
     background-color: #6F6F6F;
+}
+
+.level-bar {
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #C1C1C1;
+}
+
+@media screen and (max-width: 1180px) {
+    .album-banner>img {
+        margin-right: 5px;
+        width: 60px;
+    }
+    .album-banner {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    h3 {
+        font-size: 15px
+    }
+    h4 {
+        font-size: 13px;
+    }
+    .album-box {
+        width: 180px;
+    }
+    .album-banner>i {
+        margin: 0 5px;
+    }
+    .album-banner {
+        width: 25%;
+    }
+    .player {
+        width: 50%;
+    }
+    .volume {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #playlist-menu {
+        display: none;
+    }
+    aside {
+        padding-top: 10px;
+        width: 60px;
+    }
+    .aside-active {
+        display: none;
+    }
+    aside>img[src="img/logo.svg"] {
+        display: none;
+    }
+    aside>img[src*="small"] {
+        display: inline-block;
+    }
+    aside>img {
+        width: 70%;
+    }
+    aside a {
+        display: none;
+    }
+    #user>img {
+        width: 35px;
+        height: 35px;
+        margin: 10px 0;
+    }
+    #bottom-aside>hr {
+        display: none;
+    }
+    .player {
+        font-size: 20px;
+    }
+    .player i[class*="circle"] {
+        font-size: 34px;
+    }
 }
