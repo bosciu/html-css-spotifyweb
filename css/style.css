@@ -370,7 +370,7 @@ footer>div {
 /* Hover */
 
 a:hover,
-i:hover {
+i:hover:not(.fa-plus) {
     color: white;
 }
 
