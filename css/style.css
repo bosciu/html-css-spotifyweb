@@ -512,4 +512,40 @@ aside li:hover #library-icon>span {
         width: 17px;
         height: 17px;
     }
+    .player {
+        font-size: 18px;
+    }
+    .player i[class*="circle"] {
+        font-size: 30px;
+    }
+    .player i[class*="circle"]:hover {
+        font-size: 38px;
+    }
+    .folder-like-buttons>i {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .player {
+        font-size: 16px;
+    }
+    .player i[class*="circle"] {
+        font-size: 28px;
+    }
+    .player i[class*="circle"]:hover {
+        font-size: 36px;
+    }
+    .folder-like-buttons>i {
+        font-size: 14px;
+    }
+    #music-scroll {
+        font-size: 12px;
+    }
+    .volume {
+        font-size: 12px;
+    }
+    .btn-lg {
+        font-size: 12px;
+    }
 }
