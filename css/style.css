@@ -178,8 +178,9 @@ i {
 
 #upgrade-banner {
     position: fixed;
-    width: calc(100% - 200px);
     right: 0;
+    z-index: 9;
+    width: calc(100% - 200px);
     height: 100px;
     padding: 20px;
     text-align: right;
@@ -260,7 +261,7 @@ i {
 
 footer {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     height: 120px;
     background-color: #282828;
 }
@@ -401,6 +402,10 @@ aside li:hover #library-icon>span {
 
 .btn-lg:hover {
     padding: 20px 40px;
+}
+
+.volume>i:hover {
+    color: #ACFF2F;
 }
 
 
