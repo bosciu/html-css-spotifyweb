@@ -524,6 +524,12 @@ aside li:hover #library-icon>span {
     .folder-like-buttons>i {
         font-size: 16px;
     }
+    #albums-section> {
+        font-size: 30px;
+    }
+    .genres-choise {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 380px) {
